@@ -1,14 +1,14 @@
 <template>
   <div>
-    <h3 class="text-center bg-primary text-white p-2">Order Summary</h3>
+    <h3 class="text-center bg-primary text-white p-2">訂單總覽</h3>
     <div class="p-3">
       <table class="table table-sm table-striped">
         <thead>
           <tr>
-            <th>Quantity</th>
-            <th>Product</th>
-            <th class="text-end">Price</th>
-            <th class="text-end">Subtotal</th>
+            <th>數量</th>
+            <th>商品名稱</th>
+            <th class="text-end">價格</th>
+            <th class="text-end">總計</th>
           </tr>
         </thead>
         <tbody>
@@ -21,7 +21,7 @@
         </tbody>
         <tfoot>
           <tr>
-            <th class="text-end" colSpan="3">Total:</th>
+            <th class="text-end" colSpan="3">總金額：</th>
             <th class="text-end">${{ order.total.toFixed(2) }}</th>
           </tr>
         </tfoot>
@@ -29,9 +29,9 @@
     </div>
     <div class="text-center">
       <router-link to="/products" class="btn btn-secondary m-1">
-        Back
+        返回
       </router-link>
-      <button class="btn btn-primary m-1" @click="submit">Submit Order</button>
+      <button class="btn btn-primary m-1" @click="submit">確認送出</button>
     </div>
   </div>
 </template>
@@ -57,7 +57,6 @@ export default defineComponent({
     submit() {
       this.storeOrder((order: Order) => {
         this.$router.push("/summary");
-        console.log(store.getters.storeId);
         return store.getters.storeId + 1;
       });
     },

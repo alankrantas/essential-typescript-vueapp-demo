@@ -1,6 +1,6 @@
 import { createStore } from "vuex";
 import { Product, Order } from "../data/entities";
-import data from "./data";
+import data from "../data/data";
 
 export interface StoreState {
   products: Product[],
@@ -18,7 +18,7 @@ export default createStore<StoreState>({
   state: {
     products: data(),
     order: new Order(),
-    selectedCategory: "All",
+    selectedCategory: "全部",
     storedId: 0
   },
 
@@ -42,10 +42,10 @@ export default createStore<StoreState>({
 
   getters: {
     categories(state): string[] {
-      return ["All", ...new Set(state.products.map(p => p.category))];
+      return ["全部", ...new Set(state.products.map(p => p.category))];
     },
     filteredProducts(state): Product[] {
-      return state.products.filter(p => state.selectedCategory === "All"
+      return state.products.filter(p => state.selectedCategory === "全部"
         || state.selectedCategory === p.category);
     },
     storeId(state): number {

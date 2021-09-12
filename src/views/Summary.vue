@@ -1,10 +1,9 @@
 <template>
   <div class="m-2 text-center">
-    <h2>Thanks!</h2>
-    <p>Thanks for placing your order.</p>
-    <p>Your order is #{{ id }}</p>
-    <p>We'll ship your goods as soon as possible.</p>
-    <router-link to="/products" class="btn btn-primary">OK</router-link>
+    <h2>謝謝您!</h2>
+    <p>感謝您的訂購！您的訂單編號為 #{{ id }}。</p>
+    <p>我們將安排盡快寄出商品。</p>
+    <router-link to="/products" class="btn btn-primary">返回</router-link>
   </div>
 </template>
 
@@ -15,7 +14,7 @@ import { StoreState } from "../store";
 
 export default defineComponent({
   name: "Summary",
-  
+
   computed: {
     ...mapState<StoreState>({
       id: (state: StoreState) => state.storedId,

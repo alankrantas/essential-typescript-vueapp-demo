@@ -2,7 +2,7 @@
   <div class="p-1 bg-secondary text-white text-end">
     {{ displayText }}
     <router-link to="/order" class="btn btn-primary m-1">
-      Submit Order
+      送出訂單
     </router-link>
   </div>
 </template>
@@ -22,8 +22,8 @@ export default defineComponent({
     displayText(): string {
       const count = this.store.state.order.productCount;
       return count === 0
-        ? "(No Selection)"
-        : `${count} product(s), ` +
+        ? "(購物車無商品)"
+        : `購物車內有 ${count} 件商品，` +
             `$${this.store.state.order.total.toFixed(2)}`;
     },
   },

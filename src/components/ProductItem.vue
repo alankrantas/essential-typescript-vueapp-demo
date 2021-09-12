@@ -9,7 +9,7 @@
     <div class="card-text bg-white p-1">
       {{ product.description }}
       <button class="btn btn-success btn-sm float-end" @click="handleAddToCart">
-        Add To Cart
+        放入購物車
       </button>
       <select
         class="form-control-inline float-end m-1"
