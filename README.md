@@ -4,9 +4,13 @@ This shopping demo app is modified from the example in <i>[Essential Typescript]
 
 The live version of this app: https://essential-typescript-vueapp-demo.vercel.app/.
 
-If you want to run this on your machine, download it and run ```npm install``` first (Node.js is required).
+### Project setup
 
-### Compiles and hot-reloads for development
+Download the project and run
+
+```npm install```
+
+### Compiles and run dev version
 
 ```
 npm run serve
@@ -14,7 +18,7 @@ npm run serve
 
 And open ```http://localhost:8080``` in your browser.
 
-### Compiles and minifies for production
+### Compiles and run production version
 
 ```
 npm run build
