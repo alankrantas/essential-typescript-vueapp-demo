@@ -6,9 +6,11 @@ The live version of this app: https://vueappdemo.vercel.app/.
 
 ### Project setup
 
-Download the project and run
+Download the project and install packages:
 
-```npm install```
+```
+npm install
+```
 
 ### Compiles and run dev version
 
