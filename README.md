@@ -1,6 +1,6 @@
-# Vue.js 3 + TypeScript 4 Shopping Demo App
+# Vue.js 3/TypeScript 4 Demo App
 
-This app is modified from the example in <i>Essential Typescript</i> by Adam Freeman, without the web service data functionality (data is hard-coded).
+This app is modified from the example in <i>[Essential Typescript](https://github.com/Apress/essential-typescript-4)</i> by Adam Freeman, without the web service data functionality (data is hard-coded).
 
 If you want to run this on your machine, download it and run ```npm install``` first.
 
