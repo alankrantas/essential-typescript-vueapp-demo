@@ -1,24 +1,27 @@
-# vueapp
+# Vue.js 3 + TypeScript 4 Shopping Demo App
 
-## Project setup
-```
-npm install
-```
+This app is modified from the example in <i>Essential Typescript</i> by Adam Freeman, without the web service data functionality (data is hard-coded).
+
+If you want to run this on your machine, download it and run ```npm install``` first.
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
 
+And open ```http://localhost:8080``` in your browser.
+
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
-### Lints and fixes files
+To run the production app:
+
 ```
-npm run lint
+node server.js 8080
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+And open ```http://localhost:8080``` in your browser.
